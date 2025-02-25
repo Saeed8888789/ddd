@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إعدادات الأندرويد</title>
+    <link rel="stylesheet" href="ste.css">
+    <script defer src="ff.js"></script>
+</head>
+<body>
+
+    <div class="settings-container">
+        <h2>الإعدادات</h2>
+        <div class="settings-list">
+            <div class="setting-item" onclick="openSetting('wifi')">
+                <img src="OIP.jpg" alt="WiFi">
+                <span>الشبكة والإنترنت</span>
+            </div>
+
+            <div class="setting-item" onclick="openSetting('bluetooth')">
+                <img src="bluetooth_PNG72.png" alt="Bluetooth">
+                <span>Bluetooth</span>
+            </div>
+
+            <div class="setting-item" onclick="openSetting('display')">
+                <img src="OIP (2).jpg" alt="Display">
+                <span>الشاشة</span>
+            </div>
+
+            <div class="setting-item" onclick="openSetting('sound')">
+                <img src="OIP (1).jpg" alt="Sound">
+                <span>الصوت</span>
+            </div>
+
+            <div class="setting-item" onclick="openSetting('about')">
+                <img src="ss.jpg" alt="About">
+                <span>حول الهاتف</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="setting-details" class="details-panel">
+        <button onclick="closeSetting()">رجوع</button>
+        <h3 id="setting-title">تفاصيل الإعداد</h3>
+        <p id="setting-content">اختر إعدادًا لعرض تفاصيله.</p>
+    </div>
+
+</body>
+</html>
